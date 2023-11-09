@@ -10,12 +10,13 @@ layout: blog
 <article class="container">
     <br/>
     <div class="card">
-        <small class="card-header">Published on {{ page.date | date: '%B %e, %Y' }}</small>
+
+        <small class="card-header">Publicado el {% include date_es.html date=page.date %}</small>
         <div class="card-body">
             <h5><b>{{ page.title }}</b></h5>
             <p class="card-text">{{ content }}</p>
             <div class="arrow-back">
-                <a href="{{ site.baseurl }}/blog" class="go-back">&laquo; Back</a>
+                <a href="{{ site.baseurl }}/blog" class="go-back">&laquo; Volver</a>
             </div>
         </div>
     </div>
