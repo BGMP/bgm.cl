@@ -13,7 +13,7 @@ layout: blog
         {% for post in paginator.posts %}
             <br/>
             <div class="card">
-                <small class="card-header">Publicado el {% include date_es.html date=post.date %}</small>
+                <small class="card-header">Publicado el {% include date-es.html date=post.date %}</small>
                 <div class="card-body">
                     <a href="{{ site.baseurl }}{{ post.url }}" class="card-title">{{ post.title }}</a>
                     <p class="card-text">{{ post.excerpt | strip_html }}</p>
